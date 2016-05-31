@@ -44,5 +44,5 @@ func (context *telemetryContext) loadDeviceContext() {
 }
 
 func (context *telemetryContext) loadInternalContext() {
-	context.tags[InternalSdkVersion] = "go:" + version
+	context.tags[InternalSdkVersion] = name + ":" + version
 }
